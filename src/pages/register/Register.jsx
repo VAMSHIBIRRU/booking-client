@@ -90,7 +90,7 @@ const Register = () => {
         e.preventDefault();
         
         try {
-            const res = await axios.post("http://localhost:8800/api/auth/register", credentials);
+            const res = await axios.post("https://booking-api-3l8s.onrender.com/api/auth/register", credentials);
             alert(res);
             
             navigate("/login")
